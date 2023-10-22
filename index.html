@@ -39,6 +39,17 @@
     </div>
     <script>
 
+      function mutePage() {
+        const mediaElements = document.querySelectorAll("audio, video");
+        mediaElements.forEach((element) => {
+          element.muted = true;
+        });
+      }
+
+      // To mute the page
+      mutePage();
+
+
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
